@@ -1,1 +1,1 @@
-# l2ng2
+# Angular2
