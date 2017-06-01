@@ -4,7 +4,8 @@ import { IProduct } from './product';
 
 @Component({
   selector: 'pm-products',
-  templateUrl: 'app/products/product-list.component.html'
+  templateUrl: 'app/products/product-list.component.html',
+  styleUrls: ['app/products/product-list.component.css']
 })
 export class ProductListComponent {
   pageTitle: string = 'Product List';
@@ -21,7 +22,7 @@ export class ProductListComponent {
           "description": "Leaf rake with 48-inch wooden handle.",
           "price": 19.95,
           "starRating": 3.2,
-          "imageUrls": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+          "imageUrl": "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
       },
       {
           "productId": 2,
