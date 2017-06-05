@@ -2,14 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'pm-app',
-  template: `
-  <div>
-    <h2>Hello {{ name }} </h2>
-  </div>
-  `
+  template: '<layout-header></layout-header>'
 })
 export class AppComponent {
   constructor() {}
-  
-  name: string = `Angular 2`;
+
+  name: string = `This property can only be accessed by this component template`;
 }
