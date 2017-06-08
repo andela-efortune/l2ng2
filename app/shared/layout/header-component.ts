@@ -7,11 +7,11 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class HeaderComponent {
   constructor() {}
 
-  // name = 'Anglar 2'
+  // name: string = 'Angular2';
   @Input() name: string;
-  @Output() onNameChanged = new EventEmitter<string>();
+  @Output() onValueChange = new EventEmitter<string>();
 
   changeName(newName: string) {
-    this.onNameChanged.emit(newName);
+    this.onValueChange.emit(newName);
   }
 }
